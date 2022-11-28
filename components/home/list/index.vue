@@ -35,7 +35,7 @@ export default {
 
   @media (min-width: 2000px) { grid-template-columns: auto auto auto auto auto auto auto; }
   @media (max-width: 2000px) { grid-template-columns: auto auto auto auto auto auto; }
-  @media (max-width: 1400px) { grid-template-columns: auto auto auto auto auto; }
+  @media (max-width: 1600px) { grid-template-columns: auto auto auto auto auto; }
   @media (max-width: 1200px) { grid-template-columns: auto auto auto auto; }
   @media (max-width: 900px) { grid-template-columns: auto auto auto auto; }
   @media (max-width: 800px) { grid-template-columns: auto auto auto; }

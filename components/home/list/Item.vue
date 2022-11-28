@@ -36,8 +36,8 @@ export default {
   @media (max-width: 1900px) { height: calc(calc(1900px/6) - 28px - 28px); }
   @media (max-width: 1800px) { height: calc(calc(1800px/6) - 28px - 28px); }
   @media (max-width: 1700px) { height: calc(calc(2000px/6) - 28px - 28px); }
-  @media (max-width: 1600px) { height: calc(calc(1600px/6) - 28px - 28px); }
-  @media (max-width: 1500px) { height: calc(calc(1500px/6) - 28px - 28px); }
+  @media (max-width: 1600px) { height: calc(calc(1600px/5) - 28px - 28px); }
+  @media (max-width: 1500px) { height: calc(calc(1500px/5) - 28px - 28px); }
   @media (max-width: 1400px) { height: calc(calc(1400px/5) - 28px - 28px);  }
   @media (max-width: 1350px) { height: calc(calc(1350px/5) - 28px - 28px);  }
   @media (max-width: 1300px) { height: calc(calc(1300px/5) - 28px - 28px);  }
