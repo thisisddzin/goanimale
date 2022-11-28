@@ -1,0 +1,71 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  color: $black_color;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.flex {
+  display: flex;
+
+  &--direction-column {
+    flex-direction: column;
+  }
+
+  &--direction-row {
+    flex-direction: row;
+  }
+
+  &--justify-start {
+    justify-content: flex-start;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+
+  &--justify-space-between {
+    justify-content: space-between;
+  }
+
+  &--justify-space-around {
+    justify-content: space-around;
+  }
+
+  &--justify-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+}

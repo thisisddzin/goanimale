@@ -1,0 +1,23 @@
+
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "nuxt-purgecss": "^2.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.2.2",
+    "@nuxt/image": "^0.7.1",
+    "@unlighthouse/nuxt": "^0.4.4",
+    "nuxt-i18n": "^6.28.1"
+  }
+}
