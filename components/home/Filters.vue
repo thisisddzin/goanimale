@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
   @mixin activeEffect() {
     opacity: 1;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
 
   .home-filters {
@@ -29,6 +29,10 @@ export default {
 
     h2 {
       padding: 5px 20px;
+
+      @media (max-width: 600px) {
+        padding: 5px 12px;
+      }
     }
 
     ul {
@@ -36,6 +40,10 @@ export default {
       gap: 10px;
       width: 100%;
       overflow: auto;
+
+      @media (max-width: 600px) {
+        padding: 5px 12px;
+      }
 
       -ms-overflow-style: none; /* for Internet Explorer, Edge */
       scrollbar-width: none; /* for Firefox */

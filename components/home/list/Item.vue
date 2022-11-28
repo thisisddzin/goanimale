@@ -1,9 +1,19 @@
 <template>
-  <li class="home-item flex flex--align-center flex--justify-center" :style="{ backgroundImage }">
-    <hgroup class="flex flex--direction-column flex--align-center">
-      <h3>Pastor Alemão</h3>
-      <h5>Cachorro</h5> 
-    </hgroup>
+  <li class="home-item" onclick="">
+    <section class="home-item__inner">
+      <article :style="{ backgroundImage }" class="home-item__front flex flex--align-center flex--justify-center">
+        <hgroup class="flex flex--direction-column flex--align-center">
+          <h3>Pastor Alemão</h3>
+          <h5>Cachorro</h5> 
+        </hgroup>
+      </article>
+      <article class="home-item__back flex flex--align-center flex--justify-center">
+        <hgroup class="flex flex--direction-column flex--align-center">
+          <h3>Back</h3>
+          <h5>back</h5> 
+        </hgroup>
+      </article>
+    </section>
   </li>
 </template>
 
@@ -22,14 +32,47 @@ export default {
 
 <style lang="scss" scoped>
 .home-item {
-  background: $secondary_color_first;
   min-height: 170px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
   border-radius: 20px;
   color: white;
   text-shadow: $text-shadow-default;
+  border: 1.5px solid $black_color;
+  transition: border-color 0.5s;
+  cursor: crosshair;
+  perspective: 1000px;
+
+  &:hover, &:active {
+    border-color: $primary_color_second;
+  }
+
+  &:hover &__inner, &:active &__inner {
+    transform: rotateY(180deg);
+  }
+
+  &__inner {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__front, &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 19px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+    background: $secondary_color_first;
+  }
 
   @media (min-width: 2000px) { height: calc(calc(2000px/6) - 28px - 28px); }
   @media (max-width: 2000px) { height: calc(calc(2000px/6) - 28px - 28px); }

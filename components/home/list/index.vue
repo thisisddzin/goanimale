@@ -33,6 +33,11 @@ export default {
   display: grid;
   gap: 20px;
 
+  @media (max-width: 600px) {
+    padding: 12px;
+    gap: 12px;
+  }
+
   @media (min-width: 2000px) { grid-template-columns: auto auto auto auto auto auto auto; }
   @media (max-width: 2000px) { grid-template-columns: auto auto auto auto auto auto; }
   @media (max-width: 1600px) { grid-template-columns: auto auto auto auto auto; }

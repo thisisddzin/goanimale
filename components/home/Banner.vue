@@ -55,6 +55,10 @@ export default {
   transition: background-image 1s ease;
   filter: grayscale(20%);
 
+  @media (max-width: 600px) {
+    padding: 12px;
+  }
+
   svg {
     position: absolute;
     bottom: 0;
